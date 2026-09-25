@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Joseph C. Cayanong | Portfolio</title>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Link sa CSS inside css folder -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- TOP NAVIGATION BAR -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="brand">
+                <h2>Portfolio<span>.</span></h2>
+            </div>
+
+            <nav class="nav-menu">
+                <a href="#overview" class="nav-link active"><i class="fa-solid fa-house"></i> Overview</a>
+                <a href="#about" class="nav-link"><i class="fa-solid fa-user"></i> Profile</a>
+                <a href="#skills" class="nav-link"><i class="fa-solid fa-code"></i> Skills</a>
+                <a href="#work" class="nav-link"><i class="fa-solid fa-briefcase"></i> My Work</a>
+                <a href="#timeline" class="nav-link"><i class="fa-solid fa-timeline"></i> Experience</a>
+                <a href="#contact" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <div class="social-links">
+                    <a href="https://github.com/markcayanong27" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://profile.indeed.com/?hl=en_PH&co=PH&from=gnav-homepage" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/markcayanong27" aria-label="facebook"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+
+                <button id="theme-toggle" class="icon-toggle-btn" title="Toggle Dark/Light Mode" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT AREA -->
+    <main class="main-content">
+
+        <!-- HERO / OVERVIEW SECTION -->
+        <section id="overview" class="section hero-section">
+            <div class="hero-left">
+                <span class="subtitle">MARK JOSEPH C. CAYANONG / INFORMATION TECHNOLOGY</span>
+                <h1 class="hero-title">
+                    Ideas into impact.<br>
+                    Skills into solutions. <br>
+                    <span class="italic-accent">next chapter.</span>
+                </h1>
+                <p class="hero-description">
+                   Turning ideas into practical solutions through technology, creativity, and continuous learning.
+                </p>
+                <div class="hero-actions">
+                    <a href="images/RESUME-OJT.pdf" class="btn btn-primary">
+                        Download résumé <i class="fa-solid fa-download"></i>
+                    </a>
+                    <a href="#about" class="btn-text">Get to know me <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="languages">
+                    <span>MANILA, PH</span>
+                    <span class="dot">•</span>
+                    <span>ENGLISH</span>
+                    <span class="dot">•</span>
+                    <span>FILIPINO</span>
+                </div>
+            </div>
+
+            <div class="hero-right">
+                <div class="arch-card">
+                    <img src="images/Mark.jpg" alt="Mark Joseph">
+                    <div class="arch-overlay">
+                        <span class="card-tag">PORTFOLIO /</span>
+                        <div class="card-bottom">
+                            <span class="greeting">HELLO, I'M</span>
+                            <h3>Mark Joseph.</h3>
+                            <p>Always learning. Always moving forward.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="section">
+            <div class="section-title">
+                <h2>About Me</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <p class="lead">
+                        I am an Information Technology student passionate about software development, full-stack web applications, and desktop solutions. I specialize in building responsive, efficient, and user-friendly systems.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="section">
+            <div class="section-title">
+                <h2>Skills & Expertise</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fa-solid fa-code icon"></i>
+                    <h3>Web Development</h3>
+                    <p>PHP, Laravel, HTML5, CSS3, JavaScript, Bootstrap, and jQuery for building robust web applications.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-desktop icon"></i>
+                    <h3>Desktop Applications</h3>
+                    <p>C# (.NET Framework) with MySQL database integration for desktop solutions.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-microchip icon"></i>
+                    <h3>Hardware & IoT</h3>
+                    <p>Arduino Uno microcontrollers, I2C LCD screens, RFID modules, and circuit assembly.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- MY WORK SECTION -->
+       <section id="work" class="section">
+    <div class="section-title">
+        <h2>Featured Projects</h2>
+        <div class="divider"></div>
+    </div>
+    
+    <div class="work-grid">
+        <!-- Project 1: POS System -->
+        <div class="work-card">
+            <div class="work-img">
+                <img src="images/POScafe.png" alt="Caféderacion POS System">
+            </div>
+            <div class="work-info">
+                <span class="sub-label">WEB APP</span>
+                <h3>Caféderacion POS System</h3>
+                <p>Web-based Point-of-Sale system featuring order management, RFID integration, and automated reporting from one dashboard.</p>
+                
+                <div class="tech-tags">
+                    <span>Laravel</span>
+                    <span>PHP</span>
+                    <span>MySQL</span>
+                    <span>RFID</span>
+                </div>
+                <a href="POS.html" class="btn-view-project">
+                    View Project
+                </a>
+            </div>
+        </div>
+
+        <!-- Project 2: Barangay System -->
+        <div class="work-card">
+            <div class="work-img">
+                <img src="images/barangay/barangay4.png" alt="Barangay Management System">
+            </div>
+            <div class="work-info">
+                <span class="sub-label">WEB APP</span>
+                <h3>Barangay Management System</h3>
+                <p>Comprehensive system for resident profiling, automated clearance issuance, blotter records, and demographic tracking.</p>
+                
+                <div class="tech-tags">
+                    <span>Laravel</span>
+                    <span>PHP</span>
+                    <span>MySQL</span>
+                    <span>Bootstrap</span>
+                </div>
+                <a href="barangay.html" class="btn-view-project">
+                    View Project
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- TIMELINE SECTION -->
+        <section id="timeline" class="section">
+            <div class="section-title">
+                <h2>Experience & Education</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <div class="timeline-content">
+                        <span class="date">2023 - Present</span>
+                        <h3>BS Information Technology</h3>
+                        <p>PHINMA Saint Jude College Manila</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"><i class="fa-solid fa-code"></i></div>
+                    <div class="timeline-content">
+                        <span class="date">2025 - 2026</span>
+                        <h3>Point-of-Sale System Capstone</h3>
+                        <p>Lead developer for Caféderacion POS System built using PHP, Laravel, and RFID modules.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="contact-box">
+                <p>Have a project in mind or looking for an intern/developer? Feel free to reach out!</p>
+                <a href="mailto:markcayanong0906@gmail.com" class="btn btn-primary">Send Message <i class="fa-solid fa-paper-plane"></i></a>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <p>&copy; 2026 Mark Joseph C. Cayanong. All rights reserved.</p>
+        </footer>
+
+    </main>
+
+    <!-- Link sa JS inside js folder -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>

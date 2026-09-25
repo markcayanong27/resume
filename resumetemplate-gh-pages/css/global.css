@@ -1,0 +1,75 @@
+/* ==========================================
+   THEME VARIABLES & RESET
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Light Mode Default */
+:root {
+    --bg-color: #f7f5ef;
+    --grid-line: #e2ded4;
+    --card-bg: #ffffff;
+    --card-translucent: rgba(255, 255, 255, 0.4);
+    --text-dark: #111111;
+    --text-muted: #555555;
+    --border-color: #c8c3b5;
+    --accent-emerald: #059669;
+    --btn-bg: #000000;
+    --btn-text: #ffffff;
+    --font-serif: 'Playfair Display', serif;
+    --font-sans: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Dark Mode Overrides */
+body.dark-mode {
+    --bg-color: #121212;
+    --grid-line: #242424;
+    --card-bg: #1e1e1e;
+    --card-translucent: rgba(30, 30, 30, 0.6);
+    --text-dark: #f1f1f1;
+    --text-muted: #a0a0a0;
+    --border-color: #333333;
+    --btn-bg: #ffffff;
+    --btn-text: #000000;
+}
+
+body {
+    background-color: var(--bg-color);
+    background-image: 
+        linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+        linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
+    background-size: 40px 40px;
+    color: var(--text-dark);
+    font-family: var(--font-sans);
+    line-height: 1.6;
+    padding: 2rem 5%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Toggle Switch Button Style */
+.theme-toggle-btn {
+    position: fixed;
+    top: 1.5rem;
+    right: 5%;
+    z-index: 1000;
+    background-color: var(--card-bg);
+    color: var(--text-dark);
+    border: 1px solid var(--border-color);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.theme-toggle-btn:hover {
+    border-color: var(--text-dark);
+}

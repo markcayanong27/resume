@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caféderacion POS System - Project Details</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- 1. Global CSS (Shared Variables, Body, Footer) -->
+    <link rel="stylesheet" href="css/global.css">
+
+    <!-- 2. POS Page Specific CSS -->
+    <link rel="stylesheet" href="css/pos.css">
+</head>
+
+<!-- Toggle Button -->
+<button id="themeToggleBtn" class="theme-toggle-btn">
+    <i class="fa-solid fa-moon"></i>
+    <span id="themeToggleText">Dark Mode</span>
+</button>
+
+<!-- JavaScript Script para sa Mode Switcher at Preference Storage -->
+<script>
+    const toggleBtn = document.getElementById('themeToggleBtn');
+    const toggleText = document.getElementById('themeToggleText');
+    const icon = toggleBtn.querySelector('i');
+
+    // Suriin kung may nakasave na preference sa localStorage
+    if (localStorage.getItem('theme') === 'dark') {
+        document.body.classList.add('dark-mode');
+        icon.className = 'fa-solid fa-sun';
+        toggleText.textContent = 'Light Mode';
+    }
+
+    toggleBtn.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        
+        if (document.body.classList.contains('dark-mode')) {
+            localStorage.setItem('theme', 'dark');
+            icon.className = 'fa-solid fa-sun';
+            toggleText.textContent = 'Light Mode';
+        } else {
+            localStorage.setItem('theme', 'light');
+            icon.className = 'fa-solid fa-moon';
+            toggleText.textContent = 'Dark Mode';
+        }
+    });
+</script>
+<body>
+    
+    <div class="container">
+        <!-- Back Link -->
+        <a href="index.html#work" class="back-link">
+            <i class="fa-solid fa-arrow-left"></i> Back to projects
+        </a>
+
+        <!-- Hero Section -->
+        <section class="project-hero">
+            <div class="hero-left">
+                <span class="category-tag">WEB APP</span>
+                <h1 class="project-title">Caféderacion POS System with RFID</h1>
+                <p class="project-description">
+                    Caféderacion POS is a full-stack Point-of-Sale and inventory system built with Laravel, PHP, and MySQL. It centralizes order taking, tracking sales analytics, managing inventory stocks, and processing rapid cashless payments using integrated RFID cards.
+                </p>
+
+                <!-- Tech Badges -->
+                <div class="tech-tags-list">
+                    <span class="tech-tag">Laravel</span>
+                    <span class="tech-tag">PHP</span>
+                    <span class="tech-tag">MySQL</span>
+                    <span class="tech-tag">Bootstrap</span>
+                    <span class="tech-tag">RFID Integration</span>
+                </div>
+
+                <!-- Buttons -->
+                <div class="action-btns">
+                    <a href="https://github.com/markcayanong27" class="btn-outline">GitHub</a>
+                </div>
+            </div>
+
+            <!-- Main Project Screenshot -->
+            <div class="hero-right">
+                <div class="main-preview-card">
+                    <img src="images/POScafe.png" alt="Cafederacion Main Dashboard Preview">
+                </div>
+            </div>
+        </section>
+
+        <!-- Goal / Challenge / Outcome -->
+        <section class="metrics-grid">
+            <div class="metric-card">
+                <h4>GOAL</h4>
+                <p>To build a fast, reliable POS system that speeds up coffee shop customer checkout times using RFID and eliminates manual sales tracking errors.</p>
+            </div>
+            <div class="metric-card">
+                <h4>CHALLENGE</h4>
+                <p>Coffee shops suffer during peak hours from long queues and inaccurate ingredient inventory counts when processing cash payments manually.</p>
+            </div>
+            <div class="metric-card">
+                <h4>OUTCOME</h4>
+                <p>A functional POS system with real-time inventory updates, instant tap-to-pay via RFID cards, automated daily financial reports, and zero delay on order queues.</p>
+            </div>
+        </section>
+
+        <!-- Project Gallery -->
+        <section class="gallery-section" >
+            <h2 class="section-heading">Project gallery</h2>
+            <div class="gallery-grid">
+                <!-- Card 1 -->
+                <div class="gallery-card">
+                    <img src="images/POScafe1.png" alt="Order Terminal">
+                </div>
+                <!-- Card 2 -->
+                <div class="gallery-card">
+                    <img src="images/POScafe2.png" alt="Analytics Dashboard">
+                </div>
+                <!-- Card 3 -->
+                <div class="gallery-card">
+                    <img src="images/POScafe3.png" alt="Inventory Tracker">
+                </div>
+                <!-- Card 4 -->
+                <div class="gallery-card">
+                    <img src="images/POScafe4.png" alt="RFID Scanner">
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Built By -->
+        <section class="built-by-section">
+            <h2 class="section-heading">Built by</h2>
+            <div class="built-by-card">
+                <h3>Mark Joseph C Cayanong</h3>
+                <p>Full Stack Developer</p>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
